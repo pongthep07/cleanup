@@ -1,0 +1,530 @@
+/* Custom CSS Styles */
+body {
+  font-family: "Poppins", "Noto Sans Thai", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar .box-navbar {
+  padding: 16px 30px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 4px 10px 0px #0000001a;
+}
+.navbar-nav {
+  gap: 14px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #002f6c;
+  padding: 8px 16px;
+  position: relative;
+  transition: color 0.3s ease; /* Adds smooth transition for text color */
+}
+
+/* Create a pseudo-element for the underline on both active and hover states */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; /* Start with no width */
+  height: 4px;
+  background-color: #ffc107; /* Yellow color */
+  border-radius: 2px;
+  transition: width 0.3s ease; /* Adds smooth transition for width */
+}
+
+/* Style for the link on hover */
+.navbar-nav .nav-link:hover::after {
+  width: 85%;
+}
+
+/* Style for the active link */
+.navbar-nav .nav-link.active {
+  color: #002f6c;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 85%; /* Underline for the active link */
+}
+
+.hero-section {
+  padding-bottom: 100px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.hero-section .brand-text {
+  background-color: #ffffff;
+  color: #0d6efd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* --- About Section Styles --- */
+.about-section h2 {
+  font-weight: 700;
+  color: #002f6c;
+  font-size: 2.5rem;
+}
+
+.section-tag {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #002f6c;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 50px;
+}
+
+.icon-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.icon-list-item .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.2rem;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.icon-list-item .icon img {
+  height: 28px;
+  width: 28px;
+}
+/* --- End About Section Styles --- */
+
+.franchise-section h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+
+  letter-spacing: 0%;
+  color: #002f6c;
+}
+.franchise-section p {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #002f6c;
+}
+
+.section-card {
+  padding: 2rem;
+  height: 100%;
+}
+
+.package-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.package-card .card-body {
+  background-color: #fff;
+}
+.package-card .card-title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #002f6c;
+}
+
+.package-card .card-text {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #002f6c;
+}
+
+.btn-custom {
+  background-color: #002f6c;
+  color: white;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+}
+.btn-custom:hover {
+  background-color: #004a99; /* น้ำเงินสว่างขึ้น */
+  color: #ffffff;
+}
+
+.icon-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon-list-item .icon {
+  width: 58px;
+  height: 58px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.box-packages {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.box-packages .text-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #002f6c;
+}
+.box-packages .text-highlight {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  color: #002f6c;
+  background-color: #fec601;
+  display: inline-block;
+
+  padding: 8px 36px;
+}
+
+.box-packages .text-title-subtitle {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #002f6c;
+}
+.box-packages .text-title-subtitle .text-yellow {
+  color: #fec601;
+}
+
+/* --- Footer Section Styles --- */
+.footer-section {
+  background-color: #002f6c;
+
+  padding: 2rem 3rem 0;
+  border-radius: 5rem 5rem 0 0;
+  position: relative;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-company-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-address {
+  color: #e0e7ff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-social span {
+  color: #e0e7ff;
+  font-size: 0.9rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.line-icon {
+  background-color: #00c300;
+}
+
+.line-icon::after {
+  content: "LINE";
+  font-size: 8px;
+}
+
+.facebook-icon {
+  background-color: #1877f2;
+}
+
+.facebook-icon::after {
+  content: "f";
+  font-size: 14px;
+}
+
+/* กล่องรวม */
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* แท่งครีม + โค้งมน + ข้อความ */
+.contact-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: #fff3cd; /* ครีม */
+  color: #0b2d52; /* น้ำเงินกรมท่า */
+  border-radius: 999px;
+  padding: 14px 24px 14px 72px; /* เผื่อพื้นที่ให้ไอคอนซ้าย */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* วงกลมเหลืองล้ำออกซ้าย */
+.chip-icon {
+  position: absolute;
+  left: -18px; /* ทำให้ล้ำออกนอกกล่อง */
+  width: 64px;
+  height: 64px;
+  background: #ffc107; /* เหลือง */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ไอคอนโทรศัพท์สีขาว */
+.chip-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+.chip-text {
+  white-space: nowrap;
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+}
+
+.qr-code-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.qr-code-text {
+  color: #002f6c;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.footer-copyright {
+  background-color: #ffc107;
+  margin: 2rem -3rem 0 -3rem;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 0;
+}
+
+.footer-copyright p {
+  color: #002f6c;
+  font-weight: 500;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 2rem 1rem;
+  }
+  
+  .contact-buttons {
+    margin: 2rem 0;
+  }
+  
+  .qr-code-container {
+    margin-top: 2rem;
+  }
+  
+  .footer-copyright {
+    margin: 2rem -1rem 0 -1rem;
+  }
+}
+
+/* --- Fixed Social Media Buttons --- */
+.fixed-social-buttons {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.social-floating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 20px 12px 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 25px 0 0 25px;
+  transition: all 0.3s ease;
+  transform: translateX(calc(100% - 45px));
+  width: 200px;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+}
+
+.social-floating-btn:hover {
+  transform: translateX(0);
+  color: white;
+  text-decoration: none;
+}
+
+.social-floating-btn svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.social-floating-btn span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.social-floating-btn:hover span {
+  opacity: 1;
+}
+
+/* Individual button colors */
+.facebook-btn {
+  background: linear-gradient(135deg, #1877f2 0%, #42a5f5 100%);
+}
+
+.facebook-btn:hover {
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+}
+
+.line-btn {
+  background: linear-gradient(135deg, #00c300 0%, #4caf50 100%);
+}
+
+.line-btn:hover {
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+}
+
+.phone-btn {
+  background: linear-gradient(135deg, #ff9800 0%, #ffc107 100%);
+}
+
+.phone-btn:hover {
+  background: linear-gradient(135deg, #e65100 0%, #f57c00 100%);
+}
+
+.contact-btn {
+  background: linear-gradient(135deg, #87ceeb 0%, #64b5f6 100%);
+}
+
+.contact-btn:hover {
+  background: linear-gradient(135deg, #1976d2 0%, #2196f3 100%);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .fixed-social-buttons {
+    right: -5px;
+  }
+  
+  .social-floating-btn {
+    width: 180px;
+    padding: 10px 15px 10px 10px;
+    font-size: 13px;
+    transform: translateX(calc(100% - 40px));
+  }
+  
+  .social-floating-btn svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+}
